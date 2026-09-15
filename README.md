@@ -1,7 +1,7 @@
 # Erik Scholtz
 
 A small Jekyll homepage inspired by ivory HHKB keycaps and terminal interfaces.
-HTML and CSS only, with locally served fonts.
+Static HTML and CSS, locally served fonts, and a small optional Vim navigation script.
 
 ## Local development
 
@@ -41,3 +41,14 @@ preserved locally and excluded from the Jekyll output.
 - [Inconsolata Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Inconsolata), Regular.
 
 Original font files and licenses are kept in `assets/fonts/`.
+
+## Keyboard navigation
+
+`j` / `k` scroll; `gg` / `G` jump to the top / bottom;
+`h` / `l` focus the previous / next link; Enter opens the focused link.
+`?` opens the inline guide; Escape closes it. The guide includes a persistent
+off switch. Shortcuts ignore editable fields, selected text, and Ctrl/Alt/Meta
+combinations. All content and ordinary links work without JavaScript.
+
+Project descriptions in `index.md` are based on the linked public repository
+READMEs, reviewed on September 15, 2026. harnessd is described as work in progress.

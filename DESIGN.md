@@ -14,11 +14,11 @@ Self-host New Heterodox Mono Book and Bold for prose and headings. Use Inconsola
 
 ## Layout
 
-A centered frame approximately 76 body characters wide with generous outer whitespace. One-pixel square borders interrupted by small text labels. A compact identity header, introduction, and current-work section. Two-column section labels and prose on desktop, stacked on narrow screens. Body lines stay below 65 characters.
+A centered frame approximately 76 body characters wide with generous outer whitespace. One-pixel square borders with a small path label. A compact identity header, About, and Projects. Two-column section labels and prose on desktop, stacked on narrow screens. Body lines stay below 65 characters. Avoid redundant session labels, section numbers, end-of-file labels, and repeated names.
 
 ## Interaction
 
-Plain underlined links, visible hover and keyboard focus, no JavaScript, no motion. The homepage contains only real sections. About redirects to the introduction. A matching 404 page offers a home link.
+Plain links and visible keyboard focus. A small progressive-enhancement script adds Vim navigation: j/k scroll, gg/G top/bottom, h/l previous/next link, Enter opens the focused link, ? opens an inline guide, Escape closes it. The guide contains a persistent opt-out. Respect editable fields, text selection, modifier keys, and native Tab navigation. Use instant scrolling. With JavaScript unavailable, hide the guide and retain all content and ordinary links. About redirects to the introduction; a matching 404 offers a home link.
 
 ## Visual assets
 

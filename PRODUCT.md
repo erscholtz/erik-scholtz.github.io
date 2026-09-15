@@ -10,7 +10,7 @@ Peers and potential employers visiting Erik Scholtz's personal homepage to learn
 
 ## Product Purpose
 
-A brief, readable personal introduction. Preserve the existing introduction and Pyrus description. The site is a normal browser page built with Ruby and Jekyll, hosted on GitHub Pages.
+A brief, readable personal introduction and selected projects, grounded in the public repositories at github.com/erscholtz. The site is a normal browser page built with Ruby and Jekyll, hosted on GitHub Pages.
 
 ## Brand Personality
 
@@ -29,4 +29,4 @@ Avoid marketing cards, decorative animation, fake command execution, terminal lo
 
 ## Accessibility & Inclusion
 
-Target WCAG AA contrast, visible keyboard focus, responsive reflow, and full functionality without JavaScript. Decorative terminal marks are hidden from assistive technology.
+Target WCAG AA contrast, visible keyboard focus, responsive reflow, and readable content with ordinary navigation without JavaScript. Optional Vim shortcuts must be switchable off and must respect typing, text selection, and browser shortcuts.
