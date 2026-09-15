@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta name="color-scheme" content="light">
+    <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+    <link rel="preload" href="{{ '/assets/fonts/NewHeterodoxMono-Book.otf' | relative_url }}" as="font" type="font/otf" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="page">
+      <div class="session-line" aria-hidden="true">
+        <span>erik@home:~</span>
+        <span>personal homepage</span>
+      </div>
+      <div class="terminal">
+        <span class="frame-label" aria-hidden="true">~/{{ page.frame_label | default: 'home' }}</span>
+        <header class="masthead">
+          {% if page.home %}
+          <h1>{{ site.title }}</h1>
+          {% else %}
+          <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          {% endif %}
+          <nav aria-label="Page sections">
+            <a href="{{ '/' | relative_url }}#about"><span aria-hidden="true">[</span>about<span aria-hidden="true">]</span></a>
+            <a href="{{ '/' | relative_url }}#work"><span aria-hidden="true">[</span>work<span aria-hidden="true">]</span></a>
+          </nav>
+        </header>
+        <main id="content" tabindex="-1">
+          {{ content }}
+        </main>
+        <div class="frame-end" aria-hidden="true">end of file</div>
+      </div>
+      <footer class="page-footer">
+        <span>Erik Scholtz</span>
+        <a href="#content">↑ top</a>
+      </footer>
+    </div>
+  </body>
+</html>

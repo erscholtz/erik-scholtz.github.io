@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "New Heterodox Mono";
+  src: url("../fonts/NewHeterodoxMono-Book.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "New Heterodox Mono";
+  src: url("../fonts/NewHeterodoxMono-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata Nerd Font Mono";
+  src: url("../fonts/InconsolataNerdFontMono-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --paper: oklch(96% 0.009 85);
+  --ink: oklch(29% 0.008 75);
+  --muted: oklch(48% 0.008 75);
+  --rule: oklch(70% 0.009 85);
+  --selection: oklch(86% 0.009 85);
+  --prose: "New Heterodox Mono", "Courier New", monospace;
+  --mono: "Inconsolata Nerd Font Mono", Consolas, monospace;
+  font-family: var(--prose);
+  font-size: 112.5%;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+::selection { background: var(--selection); color: var(--ink); }
+a { color: inherit; text-underline-offset: 0.25em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--paper);
+  transform: translateY(-200%);
+  z-index: 1;
+}
+.skip-link:focus { transform: none; }
+
+.page { width: min(76ch, calc(100% - 4rem)); margin: clamp(3rem, 12vh, 7rem) auto 3rem; }
+.session-line, .frame-label, nav, .section-label, .frame-end, .page-footer {
+  font-family: var(--mono);
+  font-size: 0.8333rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.session-line, .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  color: var(--muted);
+}
+.session-line { margin: 0 0 1.5rem; }
+.terminal { position: relative; border: 1px solid var(--rule); padding: 2.25rem 2.5rem 2.75rem; }
+.frame-label, .frame-end { position: absolute; padding: 0 0.65rem; background: var(--paper); color: var(--muted); }
+.frame-label { top: 0; left: 1.85rem; transform: translateY(-50%); }
+.frame-end { bottom: 0; right: 1.85rem; transform: translateY(50%); }
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1.65rem;
+}
+h1, .site-name { font-size: 1.7778rem; font-weight: 400; line-height: 1.25; margin: 0; letter-spacing: -0.04em; }
+.site-name { text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+nav a { position: relative; text-decoration: none; }
+nav a::before { content: ""; position: absolute; inset: -0.6rem -0.25rem; }
+nav a:hover { text-decoration: underline; }
+nav a span { color: var(--muted); }
+.entry { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 1.5rem; padding-top: 2.25rem; scroll-margin-top: 2rem; }
+.entry + .entry { padding-top: 2.75rem; }
+.section-label { margin: 0.25rem 0 0; color: var(--muted); }
+.section-number { display: block; margin-bottom: 0.4rem; }
+.prose { min-width: 0; }
+.prose p { margin: 0; }
+.prose p + p { margin-top: 1rem; }
+.prose h3 { font-size: 1.25rem; font-weight: 700; line-height: 1.3; margin: 0 0 0.75rem; }
+.page-footer { margin-top: 1.35rem; }
+.page-footer a { text-decoration: none; }
+.page-footer a:hover { text-decoration: underline; }
+.error-page { max-width: 55ch; padding-top: 2rem; }
+.error-page h1 { margin-top: 1rem; }
+.redirect-page { max-width: 60ch; padding: 2rem; margin: 3rem auto; }
+
+@media (max-width: 640px) {
+  .page { width: calc(100% - 2rem); margin-top: 2.5rem; }
+  .terminal { padding: 1.75rem 1.25rem 2rem; }
+  .frame-label { left: 0.6rem; }
+  .frame-end { right: 0.6rem; }
+  .masthead { display: block; }
+  nav { margin-top: 1.25rem; }
+  .entry { grid-template-columns: minmax(0, 1fr); gap: 0.85rem; }
+  .section-number { display: inline; margin-right: 0.75rem; }
+  .session-line { font-size: 0.7778rem; gap: 0.25rem 0.75rem; }
+}
+
+@media print {
+  .page { width: 100%; margin: 1rem 0; }
+  .skip-link, nav, .page-footer a { display: none; }
+  .entry { break-inside: avoid; }
+}

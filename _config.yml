@@ -1,0 +1,23 @@
+title: Erik Scholtz
+description: Computer Science Graduate and Systems Engineer @ Deloitte.
+url: "https://erik-scholtz.github.io"
+baseurl: ""
+lang: en
+encoding: utf-8
+timezone: America/Toronto
+markdown: kramdown
+strict_front_matter: true
+liquid:
+  error_mode: strict
+exclude:
+  - frontend
+  - vendor
+  - README.md
+  - PRODUCT.md
+  - DESIGN.md
+  - todo.md
+  - deploy.rb
+  - deploy.ps1
+  - Gemfile
+  - Gemfile.lock
+  - scripts
