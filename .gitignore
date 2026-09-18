@@ -9,7 +9,6 @@ node_modules/
 
 # Build outputs
 .output/
-.vinxi/
 dist/
 build/
 _site/

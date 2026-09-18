@@ -23,7 +23,7 @@ Avoid marketing cards, decorative animation, fake command execution, terminal lo
 ## Design Principles
 
 - Make the introduction immediately readable.
-- Express terminal character through alignment, frames, and small labels.
+- Express the HHKB character through warm ivory, compact typography, and precise alignment. Avoid simulated terminal formatting and decorative technical labels.
 - Keep content compact and typography deliberate.
 - Use ordinary browser links and semantic document structure.
 

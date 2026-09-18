@@ -1,5 +1,5 @@
 title: Erik Scholtz
-description: Computer Science Graduate and Systems Engineer @ Deloitte.
+description: Software engineer at Deloitte, interested in systems programming and small tools in Rust and C++.
 url: "https://erik-scholtz.github.io"
 baseurl: ""
 lang: en
@@ -10,7 +10,6 @@ strict_front_matter: true
 liquid:
   error_mode: strict
 exclude:
-  - frontend
   - vendor
   - README.md
   - PRODUCT.md

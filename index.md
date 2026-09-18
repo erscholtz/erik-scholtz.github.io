@@ -10,7 +10,7 @@ home: true
 
 <div class="prose" markdown="1">
 
-Computer Science Graduate and Software Engineer @ Deloitte.
+I'm a software engineer at Deloitte. Outside of work, I enjoy exploring systems programming and building small tools in Rust and C++.
 
 </div>
 </section>
@@ -24,7 +24,7 @@ Computer Science Graduate and Software Engineer @ Deloitte.
 
 <article class="project" id="pyrus" markdown="1">
 
-### [Pyrus](https://github.com/erscholtz/pyrus)
+### [pyrus](https://github.com/erscholtz/pyrus)
 
 A document language in Rust, with CSS-based layout and PDF output.
 
@@ -46,6 +46,24 @@ A Rust daemon and Neovim scratchpad for notes and code-linked threads. Work in p
 
 </article>
 
+
+</div>
+</section>
+
+<section class="entry" id="opensource" aria-labelledby="opensource-heading" markdown="1">
+
+## Open Source
+{: #opensource-heading .section-label }
+
+<div class="prose" markdown="1">
+
+<article class="project" id="wild-linker" markdown="1">
+
+### Wild Linker
+
+Worked on the Wasm subcomponent.
+
+</article>
 
 </div>
 </section>

@@ -32,8 +32,7 @@ the domain to `https://erik-scholtz.github.io`, matching the Git remote.
 For hosting under a subpath, set `baseurl` accordingly.
 
 `/about` redirects to the introduction, and `/404.html` is the Pages error
-document. The leftover untracked `frontend/src/components/` files are
-preserved locally and excluded from the Jekyll output.
+document. There is no frontend framework or Node build step.
 
 ## Fonts
 
